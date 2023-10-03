@@ -1,0 +1,41 @@
+2023-09-28T14:52:24.14327200255-14:52:24 **** Build of configuration Debug for project happy_project ****
+000-make all 
+000-'Building file: ../src/chu_init.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/chu_init.o" -IC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/chu_init.d" -MT"src/chu_init.o" -o "src/chu_init.o" "../src/chu_init.cpp"
+000-'Finished building: ../src/chu_init.cpp'
+000-' '
+000-'Building file: ../src/gpio_cores.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_cores.o" -IC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/gpio_cores.d" -MT"src/gpio_cores.o" -o "src/gpio_cores.o" "../src/gpio_cores.cpp"
+000-'Finished building: ../src/gpio_cores.cpp'
+000-' '
+000-'Building file: ../src/main_vanilla_test.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -IC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
+000-'Finished building: ../src/main_vanilla_test.cpp'
+000-' '
+000-'Building file: ../src/timer_core.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_core.o" -IC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_core.d" -MT"src/timer_core.o" -o "src/timer_core.o" "../src/timer_core.cpp"
+000-'Finished building: ../src/timer_core.cpp'
+000-' '
+000-'Building file: ../src/uart_core.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_core.o" -IC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/uart_core.d" -MT"src/uart_core.o" -o "src/uart_core.o" "../src/uart_core.cpp"
+000-'Finished building: ../src/uart_core.cpp'
+000-' '
+000-'Building target: happy_project.elf'
+000-'Invoking: MicroBlaze g++ linker'
+000-mb-g++ -Wl,-T -Wl,../src/lscript.ld -LC:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/sw/PleaseBeNice/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "happy_project.elf"  ./src/chu_init.o ./src/gpio_cores.o ./src/main_vanilla_test.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: happy_project.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size happy_project.elf  |tee "happy_project.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-   9220	    284	   3144	  12648	   3168	happy_project.elf
+000-'Finished building: happy_project.elf.size'
+000-' '
+00255-
+14:52:26 Build Finished (took 1s.945ms)
+

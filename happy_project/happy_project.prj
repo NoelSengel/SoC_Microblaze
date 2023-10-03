@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="happy_project" location="C:/Users/noel_sengel1/Box/ELC4396/Workspace/happy_project" platform="C:/Users/noel_sengel1/Box/ELC4396/Workspace/PleaseBeNice/export/PleaseBeNice/PleaseBeNice.xpfm" platformUID="xilinx:nexys4_ddr::0.0(custom)" systemProject="happy" sysConfig="PleaseBeNice" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_I" os="standalone" language="CPP" mssSignature="90de6a46887cf847ce717076b68c6ccc">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.945218255">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.576608822" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
