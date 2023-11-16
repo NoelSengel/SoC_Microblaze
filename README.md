@@ -6,3 +6,6 @@ It is covering the Microblazer architecture provided by Dr. Chu in the System Ve
 
 Initial code is the code completed in the class and uploaded onto GitHub.
 Further updates will come when code progresses with the class.
+
+Final project will be using both a PS2 interface with a keyboard and the VGA interface to implement
+a simple game/function.
