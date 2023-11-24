@@ -13,3 +13,5 @@ a simple maze game.
 EDIT: 11/24/2023
 Game is completed, works as intended.
 ![Image](https://github.com/NoelSengel/SoC_Microblaze/assets/123399929/9909f1dc-0732-4f9c-b32d-4b5342e25cea)
+
+![Image (1)](https://github.com/NoelSengel/SoC_Microblaze/assets/123399929/75e8fa51-4916-4584-8258-5b519f7d8705)
