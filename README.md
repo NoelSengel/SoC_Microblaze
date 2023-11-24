@@ -9,3 +9,7 @@ Further updates will come when code progresses with the class.
 
 Final project will be using both a PS2 interface with a keyboard and the VGA interface to implement
 a simple maze game.
+
+EDIT: 11/24/2023
+Game is completed, works as intended.
+![Image](https://github.com/NoelSengel/SoC_Microblaze/assets/123399929/9909f1dc-0732-4f9c-b32d-4b5342e25cea)
