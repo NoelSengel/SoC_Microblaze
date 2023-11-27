@@ -173,7 +173,6 @@ void game_end(OsdCore *osd_p){
 	osd_p->wr_char(58, 20, '!');
 	sleep_ms(100);
 }
-
 GpoCore led(get_slot_addr(BRIDGE_BASE, S2_LED));
 GpiCore sw(get_slot_addr(BRIDGE_BASE, S3_SW));
 XadcCore adc(get_slot_addr(BRIDGE_BASE, S5_XDAC));
@@ -198,25 +197,28 @@ void init_game(FrameCore *frame, SpriteCore *ghost){
 	ghost->move_xy(315, 250);
 }
 int main() {
-   //uint8_t id, ;
+    //Declarations
 	int MAX_HEIGHT = 115;
 	int MIN_HEIGHT = 398;
 	int MAX_WIDTH = 485;
-	int MIN_WIDTH = 150;
-    char ch;
-    init_game(&frame, &ghost); // Initialize Character
-    init_osd(&osd);
-	ps2.init();
-	//plot_line(int x0, int y0, int x1, int y1, int color)
-
 	int x = 315;
 	int y = 250;
+    char ch;
+
+    //Initialize Game
+    init_game(&frame, &ghost);
+    init_osd(&osd);
+	ps2.init();
+
+	//Wait for user to start game with keyboard press
 	while(!ps2.get_kb_ch(&ch)){
 		sleep_ms(100);
 	}
+
 	//Game Start
 	while(1) {
 		osd.clr_screen();
+		//Below else ifs are all collisions for main character to not phase through walls
 		//first box
 		if((y == 270 ||  y == 282) && ((x > 275 && x < 305) || (x > 345 && x < 375))){ //bottom left y wall
 			if(y == 270){
@@ -226,8 +228,6 @@ int main() {
 				y = y + 2;
 			}
 		}
-
-
 		//second box walls
 		else if(x == 395 && ((y > 205 && y < 245) || (y > 275 && y < 315))){ //top right y wall entering from the left
 			if(x == 395){
@@ -406,10 +406,7 @@ int main() {
 		}
 		else if(x == 151 && (y > 145 && y < 410)){
 			x = x + 2;
-			uart.disp("THIS HAPPENSKJLDFJLK:FDLJKFDJ");
 		}
-
-
 		else if(x == MAX_WIDTH || y == MAX_HEIGHT || y == MIN_HEIGHT){
 			if(x == MAX_WIDTH){
 				x = MAX_WIDTH - 2;
@@ -443,12 +440,14 @@ int main() {
 				sleep_ms(15);
 			}
 		}
+		//Move ghost and write to PuTTY
 		ghost.move_xy(x, y);
 		sleep_ms(15);
 		uart.disp(x);
 		uart.disp("\n");
 		uart.disp(y);
 		uart.disp("\n");
+		//Game End, after 8 seconds, game will reset
 		if(x < 145){
 			game_end(&osd);
 			sleep_ms(8000);
@@ -458,9 +457,5 @@ int main() {
 			ghost.move_xy(x, y);
 		}
 	} // while
-
-
-
-
 } //main
 
