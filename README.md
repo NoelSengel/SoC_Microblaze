@@ -10,6 +10,12 @@ Further updates will come when code progresses with the class.
 Final project will be using both a PS2 interface with a keyboard and the VGA interface to implement
 a simple maze game.
 
+Functionality:
+The game starts after a key is pressed on the keyboard.
+The player then has unlimited time to find the exit to the maze.
+They cannot cross the walls of the maze and the only way to win is to find the one exit.
+After a few seconds, the game will repeat.
+
 EDIT: 11/24/2023
 Game is completed, works as intended.
 ![Image](https://github.com/NoelSengel/SoC_Microblaze/assets/123399929/9909f1dc-0732-4f9c-b32d-4b5342e25cea)
