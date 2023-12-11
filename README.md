@@ -16,6 +16,10 @@ The player then has unlimited time to find the exit to the maze.
 They cannot cross the walls of the maze and the only way to win is to find the one exit.
 After a few seconds, the game will repeat.
 
+Video:
+Here is the link to the video of my demonstration:
+https://youtu.be/J5D0Dq8giRw
+
 EDIT: 11/24/2023
 Game is completed, works as intended.
 ![Image](https://github.com/NoelSengel/SoC_Microblaze/assets/123399929/9909f1dc-0732-4f9c-b32d-4b5342e25cea)
